@@ -1,0 +1,203 @@
+body {
+  background-color: coral;
+  width: 100%;
+  margin: 0;
+}
+.logoContainer {
+  width: 13%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+.logoAbbr {
+  color: white;
+  font-size: 35px;
+  font-weight: 600;
+}
+#welcomeBack {
+  margin-top: 10px;
+  color: white;
+  font-size: 65px;
+}
+h2 {
+  margin-top: -35px;
+  color: gray;
+  font-size: 35px;
+}
+form {
+  color: white;
+}
+.forms {
+  width: 50%;
+  margin: auto;
+  text-align: left;
+}
+input {
+  color: white;
+  margin: auto;
+  width: 100%;
+  height: 35px;
+  border-radius: 15%;
+  outline: none;
+}
+input:hover {
+  border: coral 5px solid;
+}
+span,
+a {
+  color: #1ea7c5;
+}
+span > a:hover {
+  color: coral;
+}
+#login {
+  font-size: 25px;
+  background-color: #1ea7c5;
+  color: white;
+  margin-top: 35px;
+  width: 35%;
+  height: 65px;
+  border-radius: 20%;
+}
+label {
+  font-size: 20px;
+}
+#login:hover {
+  background-color: coral;
+}
+input::placeholder {
+  color: rgba(255, 255, 255, 0.678);
+}
+/* Register Form */
+#regAccount {
+  margin-top: 20px;
+  font-size: 50px;
+  color: white;
+}
+.regContainer {
+  position: absolute;
+  text-align: center;
+  margin-top: auto;
+  background-color: #110707a9;
+  width: 30%;
+  left: 35%;
+  height: 50%;
+  top: 15%;
+}
+.regForms {
+  position: relative;
+  top: -30px;
+  width: 80%;
+  margin: auto;
+  text-align: left;
+}
+#continue {
+  position: relative;
+  width: 50%;
+  background-color: #1ea7c5;
+  color: white;
+  height: 30px;
+  border-radius: 15%;
+}
+#continue:hover {
+  background-color: coral;
+}
+.registerPage {
+  display: none;
+}
+
+.loginContainer{
+  position: absolute;
+  text-align: center;
+  margin-top: 300px;
+  background-color: #110707a9;
+  width: 30%;
+  left: 35%;
+  height: 600px;
+  top: 15%;
+}
+/* Screen under Width:1150px */
+@media only screen and (max-width: 1150px) {
+  .container {
+    margin-top: 50px;
+  }
+  #welcomeBack {
+    font-size: 50px;
+  }
+  .logoContainer {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+  }
+  .logo {
+    width: 100px;
+  }
+
+  #login {
+    font-size: 20px;
+    margin-top: 20px;
+    width: 25%;
+    height: 40px;
+  }
+}
+/* Screen under Width:675px */
+@media only screen and (max-width: 675px) {
+  #welcomeBack {
+    font-size: 45px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+  input {
+    height: 30px;
+  }
+}
+#friendBox{
+  width: 700px;
+  margin-left: 500px;
+  margin-top: 79em;
+  overflow-x: hidden;
+}
+#box {
+  margin: 200px 50px;
+  overflow-y: scroll;
+  display: inline-block;
+  justify-content: space-between;
+  width: 75%;
+  height: 600px;
+  background-color: white;
+  border: 4px solid black;
+  }
+  .friend {
+  background-color: gray;
+  width: 90%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  color: blue;
+  border: blue;
+  font-size: 25px;
+  }
+  .spacing {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  }
+  #on {
+  color: chartreuse;
+  }
+  #off {
+  color: crimson;
+  }
+  
+  #welcome{
+    margin-top: 80px;
+    color: blue;
+    margin-left: 400px;
+    font-size: 60px;
+  }

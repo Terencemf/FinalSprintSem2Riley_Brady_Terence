@@ -1,0 +1,117 @@
+import "./App.css";
+import Users from "./Components/Users"
+import Login from "./Components/Login";
+import Main from "./Components/Main";
+import Reset from "./Components/Reset";
+import Register from "./Components/Register";
+import { BrowserRouter as Router, Routes, Route, Link, renderMatches } from "react-router-dom";
+
+
+
+function App() {
+  return (
+
+    <Router>
+    <div className="App">
+    <div className="logoContainer">
+        <svg
+          className="logo"
+          width="180"
+          height="180"
+          viewBox="0 0 252 266"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <ellipse
+            cx="125.611"
+            cy="124.133"
+            rx="125.611"
+            ry="124.133"
+            fill="white"
+          />
+          <path
+            d="M63.5444 195.067L118.576 248.267H8.51334L63.5444 195.067Z"
+            fill="white"
+          />
+          <circle cx="125.611" cy="125.611" r="96.0555" fill="#C4C4C4" />
+          <path
+            d="M92.8913 180.289L132.384 221.667H53.3984L92.8913 180.289Z"
+            fill="#C4C4C4"
+          />
+          <rect
+            x="115.267"
+            y="47.2888"
+            width="23.6444"
+            height="147.778"
+            fill="#0038FF"
+          />
+          <rect
+            x="73.8887"
+            y="85.7111"
+            width="23.6444"
+            height="76.8444"
+            fill="#FB0000"
+          />
+          <rect
+            x="156.644"
+            y="85.7111"
+            width="23.6444"
+            height="76.8444"
+            fill="#1BC000"
+          />
+        </svg>
+      </div>
+      <span className="logoAbbr">L.T.N.T.</span>
+    <section id="loginPage">
+        <div className="container">
+          <h1 id="welcomeBack">
+            <strong>Welcome Back!</strong>
+          </h1>
+          <h2>Long time no see! Or talk!</h2>
+          <form action="" method="get" />
+          <div className="forms">
+            <label htmlFor="Email Address">
+              <strong>Email Address:</strong>
+            </label>
+            <input
+              type="text"
+              placeholder="Enter Email Address"
+              name="username"
+              required
+            />
+
+            <br />
+            <label htmlFor="password">
+              <strong>Password:</strong>
+            </label>
+            <input
+              type="password"
+              placeholder="Enter password"
+              name="password"
+              required
+            />
+            <button>Test Login</button>
+            <br />
+      <Link to="/register" id="regBtn">Register</Link> <br />
+          </div>
+        </div>
+      </section>
+    </div>
+      <Link to="/users" id="userBtn">Users</Link> <br />
+      <Link to="/main" id="mainBtn">Main</Link> <br />
+      <Link to="/reset" id="SettingsBtn">Reset</Link> <br />
+      <Link to="/login">Login</Link> <br />
+      <Routes>
+        <Route path="/users" element={<Users />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/main" element={<Main />} />
+        <Route path="/reset" element={<Reset />} />
+        <Route path="/register" element={<Register />} />
+      </Routes>
+    </Router>
+
+    
+  );
+}
+
+export default App;

@@ -1,0 +1,156 @@
+
+body {
+    display: flex;
+    background-color: gray;
+    width: 100%;
+    margin: 0;
+}
+header {
+    position: absolute;
+    margin: 0;
+    background-color: black;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.sidebar {
+    margin: 0;
+    left: 0;
+    height: 100vh;
+    width: 75px;
+    background-color: black;
+}
+.mainLogo {
+    padding-top: 10px;
+    padding-left: 10px;
+    width: 65px;
+    height: 65px;
+}
+.mainLogoAbbr {
+    padding-left: 50px;
+    color: white;
+    font-size: 35px;
+}
+#logOutBtn {
+    position: absolute;
+    margin-left: 1700px;
+    padding: 15px;
+    background-color: #1ea7c5;
+    color: white;
+    height: 30px;
+    border-radius: 6px;
+    font-size: 30px;
+    
+  }
+#regBtn {
+    position: absolute;
+    margin-left: 2000px;
+    padding: 15px;
+    background-color: #1ea7c5;
+    color: white;
+    height: 30px;
+    border-radius: 2px;
+    font-size: 30px;
+  }
+  #userBtn {
+    position: absolute;
+    margin: 50px;
+    margin-left: 550px;
+    padding: 15px;
+    background-color: #1ea7c5;
+    color: white;
+    text-align: center;
+    height: 30px;
+    width: 100px;
+    border-radius: 2px;
+    font-size: 30px;
+  }
+  #settingsBtn {
+    position: absolute;
+    margin: 50px;
+    margin-left: 800px;
+    padding: 15px;
+    background-color: #1ea7c5;
+    text-align: center;
+    color: white;
+    height: 30px;
+    width: 120px;
+    border-radius: 2px;
+    font-size: 30px;
+  }
+  #loginBtn {
+    position: absolute;
+    margin: 50px;
+    margin-left: 300px;
+    padding: 15px;
+    background-color: #1ea7c5;
+    text-align: center;
+    color: white;
+    height: 30px;
+    border-radius: 2px;
+    width: 100px;
+    font-size: 30px;
+  }
+.friendsContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    height: 100vh;
+    background-color: darkgray;
+}
+.friendsHeader {
+    padding-top: 80px;
+    font-size: 40px;
+    color: black;
+}
+.iconify {
+    display: inline-block;
+    margin-top: -20px;
+    position: relative;
+    width: 40px;
+    height: 40px;
+}
+.iconify:hover {
+    background-color: white;
+    border-radius: 50%;
+}
+.filterContent {
+  left: 135px;
+  display: none;
+  position: absolute;
+  background-color: black;
+  justify-content:space-between;
+  flex-direction: column;
+  column-gap: 50px;
+  min-width: 150px;
+  min-height: 100px;
+  padding: 12px 16px;
+}
+.filter:hover .filterContent {
+  display: flex;
+}
+#online:hover {
+    font-size: 20px;
+    background-color: chartreuse;
+}
+#offline:hover {
+    font-size: 20px;
+    background-color: red;
+}
+#both:hover {
+    font-size: 20px;
+    background: linear-gradient(chartreuse, red)
+}
+
+p{
+    color: red;
+}
+
+#mainPara{
+    margin-top: 200px;
+    flex-direction: column;
+}
